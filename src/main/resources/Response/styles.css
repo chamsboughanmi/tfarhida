@@ -1,0 +1,92 @@
+/* Styles pour le conteneur BorderPane */
+#borderPane {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+}
+
+/* Styles pour le titre */
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333; /* Couleur du texte */
+}
+
+.logo-m {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-text-fill: green;
+}
+
+.logo-atch {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}
+
+.logo-ate {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}
+
+.background-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.5); /* Couleur de fond blanche avec une opacité de 0.5 */
+    -fx-background-image: url("../Images/terrain.jpg"); /* Chemin vers votre image */
+    -fx-background-size: cover; /* Redimensionner l'image pour remplir le conteneur */
+    -fx-background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+
+/* Styles pour les labels des formulaires */
+.form-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333; /* Couleur du texte */
+}
+
+/* Styles pour les champs de texte des formulaires */
+.text-field, .text-area {
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px;
+}
+
+/* Styles pour les boutons */
+.button {
+    -fx-font-size: 14px;
+    -fx-padding: 8px 15px;
+    -fx-background-color: #007bff; /* Couleur de fond */
+    -fx-text-fill: #fff; /* Couleur du texte */
+    -fx-border-radius: 5px;
+    -fx-border-color: transparent;
+    -fx-cursor: pointer;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Styles pour la barre latérale */
+.sidebar {
+    -fx-background-color: #333; /* Couleur de fond */
+    -fx-padding: 10px;
+}
+
+/* Styles pour les boutons de la barre latérale */
+.sidebar-button {
+    -fx-font-size: 14px;
+    -fx-padding: 8px 15px;
+    -fx-background-color: transparent;
+    -fx-text-fill: #fff; /* Couleur du texte */
+    -fx-border-color: transparent;
+    -fx-cursor: pointer;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #555; /* Couleur de fond au survol */
+}
+
+/* Styles pour le flux d'images */
+.imageFlowPane {
+    -fx-padding: 5px;
+}
+
+/* Ajoutez d'autres styles selon les besoins */

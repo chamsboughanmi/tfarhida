@@ -1,0 +1,61 @@
+/* styles.css */
+
+.root {
+    -fx-background-color: #f0f0f0; /* Couleur de fond */
+}
+
+.title {
+    -fx-font-size: 24px; /* Taille de la police du titre */
+    -fx-font-weight: bold; /* Gras pour le titre */
+    -fx-padding: 10px; /* Espacement intérieur du titre */
+}
+
+/* Style pour le label de la réponse */
+#responseLabel {
+    -fx-font-size: 16px; /* Taille de la police */
+    -fx-padding: 10px; /* Espacement intérieur */
+}
+
+/* Style pour les boutons */
+.button {
+    -fx-background-color: #4CAF50; /* Couleur de fond */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-padding: 8px 16px; /* Espacement intérieur */
+    -fx-border-radius: 4px; /* Bordure arrondie */
+    -fx-cursor: hand; /* Curseur de souris */
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Couleur de fond au survol */
+}
+
+/* Style pour la sidebar */
+.sidebar {
+    -fx-background-color: #333; /* Couleur de fond */
+    -fx-padding: 10px; /* Espacement intérieur */
+}
+
+/* Style pour les boutons de la sidebar */
+.sidebar-button {
+    -fx-background-color: #555; /* Couleur de fond */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-padding: 8px 16px; /* Espacement intérieur */
+    -fx-border-radius: 4px; /* Bordure arrondie */
+    -fx-cursor: hand; /* Curseur de souris */
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #777; /* Couleur de fond au survol */
+}
+/* Style for the response label */
+.label-style {
+    -fx-font-size: 14px; /* Set font size */
+    -fx-font-weight: bold; /* Make the text bold */
+    -fx-text-fill: #333333; /* Set text color */
+    -fx-padding: 10px; /* Add padding */
+    -fx-border-color: #cccccc; /* Set border color */
+    -fx-border-width: 1px; /* Set border width */
+    -fx-border-radius: 10px; /* Apply border radius */
+}

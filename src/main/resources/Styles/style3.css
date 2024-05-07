@@ -1,0 +1,49 @@
+/* style3.css */
+
+/* AnchorPane styling */
+#rootPane {
+    -fx-background-color: #f5f5f5; /* Set background color */
+    -fx-background-radius: 5px; /* Set background radius */
+    -fx-border-color: #ddd; /* Set border color */
+    -fx-border-width: 1px; /* Set border width */
+    -fx-border-radius: 5px; /* Set border radius */
+    -fx-padding: 15px; /* Set padding */
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 10,0,0,1 ); /* Add drop shadow */
+}
+
+/* ImageView styling */
+#stadiumImageView {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 10,0,0,1 ); /* Add drop shadow */
+}
+
+/* VBox styling */
+VBox {
+    -fx-spacing: 10px; /* Set spacing between children */
+}
+
+/* HBox styling */
+HBox {
+    -fx-spacing: 10px; /* Set spacing between children */
+}
+
+/* Label styling */
+Label {
+    -fx-font-family: "Arial"; /* Set font family */
+    -fx-font-size: 16px; /* Set font size */
+    -fx-text-fill: #333; /* Set text color */
+}
+
+/* Button styling */
+Button {
+    -fx-background-color: #4CAF50; /* Set background color */
+    -fx-text-fill: white; /* Set text color */
+    -fx-font-family: "Arial"; /* Set font family */
+    -fx-font-size: 14px; /* Set font size */
+    -fx-padding: 8px 12px; /* Set padding */
+    -fx-border-radius: 5px; /* Set border radius */
+    -fx-border-color: #388E3C; /* Set border color */
+}
+
+Button:hover {
+    -fx-background-color: #45a049; /* Change background color on hover */
+}

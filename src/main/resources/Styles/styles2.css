@@ -1,0 +1,43 @@
+.subscription-card {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, #000000, 10, 0, 0, 0);
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+    -fx-pref-width: 300px; /* Adjust the width as needed */
+    -fx-pref-height: 400px; /* Adjust the height as needed */
+}
+
+.subscription-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.subscription-description {
+    -fx-font-size: 16px;
+    -fx-text-fill: #666666;
+}
+
+.subscription-info {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.subscription-button {
+    -fx-background-color: #007ACC;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+
+/* Style for the image */
+.subscription-image {
+    -fx-fit-height: 100px; /* Adjust the image height as needed */
+    -fx-fit-width: 100px; /* Adjust the image width as needed */
+    -fx-padding: 10px;
+}

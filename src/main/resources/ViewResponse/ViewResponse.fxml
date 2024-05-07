@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.shape.Line?>
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../Styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Claim.ViewResponseController">
+   <top>
+      <VBox alignment="CENTER_LEFT" spacing="10" />
+   </top>
+   <center>
+      <AnchorPane prefHeight="639.0" prefWidth="978.0" style="-fx-background-color: D3D3D3;">
+         <children>
+            <HBox layoutX="14.0" layoutY="14.0" />
+            <VBox layoutX="8.0" prefHeight="625.0" prefWidth="210.0" style="-fx-border-radius: 20px;" styleClass="background-pane">
+               <children>
+                  <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="209.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="80.0" fitWidth="213.0">
+                           <image>
+                              <Image url="@../Images/tfarhida logo.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="34.0" prefWidth="210.0" stylesheets="@/Response/styles.css">
+                     <children>
+                        <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="10.0">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="74.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fitHeight="66.0" fitWidth="68.0" styleClass="shadow">
+                           <image>
+                              <Image url="@../Images/user.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" prefHeight="63.0" prefWidth="142.0">
+                           <children>
+                              <Label prefHeight="0.0" prefWidth="113.0" text="Andrew Tate" textFill="#006622">
+                                 <font>
+                                    <Font name="Calibri Bold" size="21.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <stylesheets>
+                                    <URL value="@../Response/styles.css" />
+                                    <URL value="@styles.css" />
+                                 </stylesheets>
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="label-bold" />
+                                 </styleClass>
+                              </Label>
+                              <Label prefHeight="13.0" prefWidth="127.0" styleClass="shadow" text="Proprietaire">
+                                 <font>
+                                    <Font name="Calibri" size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="15.0" />
+                                 </VBox.margin>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop />
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.8736842274665833" green="0.016179338097572327" blue="0.016179338097572327" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                                 <stylesheets>
+                                    <URL value="@../Response/styles.css" />
+                                    <URL value="@styles.css" />
+                                 </stylesheets>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="75.0" prefWidth="210.0" />
+                  <HBox prefHeight="61.0" prefWidth="210.0" styleClass="sidebar-button" stylesheets="@../Response/styles.css">
+                     <children>
+                        <ImageView fitHeight="58.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../Images/activities.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="8.0" top="3.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="activitiesButton" stylesheets="@../Response/styles.css" text="Activités">
+                           <font>
+                              <Font name="Calibri" size="23.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="form-label" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="71.0" prefWidth="210.0" stylesheets="@../Response/styles.css">
+                     <children>
+                        <ImageView fitHeight="48.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../Images/reservation.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="12.0" top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="reservationsButton" prefHeight="35.0" prefWidth="160.0" stylesheets="@../Response/styles.css" text="Reservations">
+                           <font>
+                              <Font name="Calibri" size="23.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="18.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="form-label" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="75.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../Images/services.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="servicesButton" prefHeight="35.0" prefWidth="160.0" stylesheets="@../Response/styles.css" text="Services">
+                           <font>
+                              <Font name="Calibri" size="23.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="18.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="form-label" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="75.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../Images/visites.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="visitesButton" prefHeight="35.0" prefWidth="160.0" stylesheets="@../Response/styles.css" text="Visites">
+                           <font>
+                              <Font name="Calibri" size="23.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="18.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="form-label" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="75.0" prefWidth="210.0">
+                     <children>
+                        <ImageView fitHeight="55.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../Images/reclamation.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="reclamationsButton" prefHeight="35.0" prefWidth="160.0" stylesheets="@../Response/styles.css" text="Réclamations">
+                           <font>
+                              <Font name="Calibri" size="23.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" top="18.0" />
+                           </HBox.margin>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="form-label" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+               <stylesheets>
+                  <URL value="@../Styles/styles.css" />
+                  <URL value="@styles.css" />
+               </stylesheets>
+            </VBox>
+            <AnchorPane layoutX="274.0" layoutY="77.0" prefHeight="462.0" prefWidth="631.0" styleClass="form-label" stylesheets="@../Styles/styles.css">
+               <children>
+                  <Label fx:id="titleLabel" layoutX="231.0" layoutY="26.0" styleClass="title" stylesheets="@styles.css" text="Afficher la réponse" />
+                  <Label fx:id="responseLabel" layoutX="110.0" layoutY="82.0" prefHeight="66.0" prefWidth="431.0" styleClass="label-style" stylesheets="@styles.css" wrapText="true" />
+                  <TextField fx:id="response" layoutX="1.0" layoutY="70.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="0.0" style="-fx-background-color: transparent; -fx-text-color: transparent;" />
+                  <Button fx:id="sat5" layoutX="252.0" layoutY="408.0" mnemonicParsing="false" onAction="#Asat5" prefHeight="26.0" prefWidth="41.0" style="-fx-background-color: green; -fx-text-fill: white; -fx-padding: 0px 0px 0px 0px;">
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/happy.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="sat4" layoutX="307.0" layoutY="407.0" mnemonicParsing="false" onAction="#Asat4" style="-fx-background-color: #a9ff00; -fx-text-fill: white; -fx-padding: 0px 0px 0px 0px;" textFill="#a9ff00">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/smile.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="sat3" layoutX="359.0" layoutY="407.0" mnemonicParsing="false" onAction="#Asat3" style="-fx-background-color: yellow; -fx-text-fill: white; -fx-padding: 0px 0px 0px 0px;">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/neutral.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="sat2" layoutX="410.0" layoutY="407.0" mnemonicParsing="false" onAction="#Asat2" style="-fx-background-color: orange; -fx-text-fill: white; -fx-padding: 0px 0px 0px 0px;">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/sad-face.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="sat1" layoutX="459.0" layoutY="407.0" mnemonicParsing="false" onAction="#Asat1" style="-fx-background-color: red; -fx-text-fill: white; -fx-padding: 0px 0px 0px 0px;">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/sad.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Label layoutX="233.0" layoutY="356.0" text="Ne partez pas avant d'avoir évalué la réponse" />
+                  <Line endX="100.0" layoutX="398.0" layoutY="386.0" startX="-178.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

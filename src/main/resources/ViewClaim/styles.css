@@ -1,0 +1,142 @@
+/* styles.css */
+
+/* Style pour le texte du logo */
+.logo-text {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+.nav-bar .logo-text {
+    -fx-text-fill: black;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.nav-bar .logo-text .green {
+    -fx-text-fill: green;}
+
+.nav-bar Button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 10px;
+    -fx-border-width: 0;
+}
+
+.nav-bar Button:hover {
+    -fx-background-color: #555555;
+}
+.form-label {
+    -fx-min-width: 100px;
+    -fx-font-weight: bold;
+}
+
+.title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+/* Style pour les lettres du logo */
+.logo-m, .logo-ate, .logo-atch {
+    -fx-font-size: 24px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+/* Style pour la barre latérale */
+.sidebar {
+    -fx-background-color: #4CAF50;
+    -fx-padding: 10px;
+}
+
+/* Style pour les boutons de la barre latérale */
+.sidebar-button {
+    -fx-background-color: #8BC34A;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 40px;
+}
+
+/* Style pour le bouton "Filter" */
+#filterButton {
+    -fx-background-color: #a33df6;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-pref-width: 90px;
+    -fx-pref-height: 32px;
+}
+
+/* Style pour le bouton "Reset" */
+#resetButton {
+    -fx-background-color: #a33df6;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-pref-width: 88px;
+    -fx-pref-height: 32px;
+}
+
+#downloadPDFButton {
+    -fx-background-color: #2a2fa6;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-pref-width: 88px;
+    -fx-pref-height: 32px;
+}
+#analyzeClaimsByTypeButton {
+    -fx-background-color: #2a2fa6;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-pref-width: 88px;
+    -fx-pref-height: 32px;
+}
+/* Style pour les labels */
+Label {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+/* Style pour les ComboBox ComboBox {
+    -fx-pref-width: 150px;
+}*/
+combobox {
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-padding: 5px; /* Marge intérieure */
+    -fx-background-color: #f4f4f4; /* Couleur de fond */
+    -fx-border-color: #ccc; /* Couleur de la bordure */
+    -fx-border-width: 1px; /* Largeur de la bordure */
+}
+
+combobox .arrow-button {
+    -fx-background-color: transparent; /* Couleur de fond de la flèche */
+}
+
+combobox .arrow-button .arrow {
+    -fx-background-color: #666; /* Couleur de la flèche */
+}
+
+combobox .list-cell {
+    -fx-font-size: 14px; /* Taille de la police des éléments de la liste */
+    -fx-padding: 5px; /* Marge intérieure des éléments de la liste */
+}
+
+combobox .list-view {
+    -fx-background-color: #f4f4f4; /* Couleur de fond de la liste déroulante */
+    -fx-border-color: #ccc; /* Couleur de la bordure de la liste déroulante */
+    -fx-border-width: 1px; /* Largeur de la bordure de la liste déroulante */
+}
+
+
+/* Style pour la TableView */
+TableView {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Style pour les colonnes de la TableView */
+.table-column {
+    -fx-alignment: CENTER;
+}
+
+/* Style pour les lignes impaires de la TableView */
+.table-row-cell:odd {
+    -fx-background-color: #E0E0E0;
+}

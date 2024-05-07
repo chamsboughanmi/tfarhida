@@ -1,0 +1,61 @@
+/* Button styles */
+.button {
+    -fx-background-color: #007acc; /* Blue */
+    -fx-border: none;
+    -fx-padding: 10px 20px;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor: pointer;
+}
+
+/* Button hover styles */
+.button:hover {
+    -fx-background-color: #005f8a; /* Darker blue on hover */
+}
+.label-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 5px 10px; /* Adjust padding as needed */
+    -fx-background-color: #007acc; /* Background color */
+    -fx-border-radius: 5px; /* Rounded corners */
+}
+/* Card styles */
+#rootPane {
+    -fx-background-color: #e0e0e0; /* Light gray */
+    -fx-border-radius: 20px;
+    -fx-border-color: #bdbdbd;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+
+#clubImageView {
+    -fx-fit-width: 100px;
+    -fx-fit-height: 153px;
+    -fx-padding: 10px;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Dark gray text */
+}
+
+.label-bold {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Edit, Delete, and View Stadiums buttons */
+#editClubButton, #deleteClubButton, #viewStadiumsButton {
+    -fx-background-color: #f64646; /* Red */
+    -fx-border: none;
+    -fx-padding: 10px 20px;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-cursor: pointer;
+}
+
+/* Button hover styles */
+#editClubButton:hover, #deleteClubButton:hover, #viewStadiumsButton:hover {
+    -fx-background-color: #d23636; /* Darker red on hover */
+}
