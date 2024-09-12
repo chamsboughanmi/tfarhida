@@ -75,7 +75,6 @@ public class ViewClaimController {
     @FXML
     private Button downloadPDF;
     //private User currentUser = SessionManager.getInstance().getCurrentUser();
-    //hedha baad ywali f blasit hedha user static || twali tekho f blasto current user
     private int userId = 19;
     private User user;
     private List<String> types = Arrays.asList("site", "service","reservation" );

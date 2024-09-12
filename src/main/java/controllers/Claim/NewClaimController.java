@@ -42,11 +42,8 @@ public class NewClaimController {
     private Button browseButton;
     @FXML
     private ImageView imageView;
-
     private File selectedFile;
     private reclamation reclamation;
-    private reclamation cp;
-    //private User currentUser = SessionManager.getInstance().getCurrentUser();
     private int userId = 19;
     private User user;
     private ClaimService claimDAO;
@@ -69,7 +66,6 @@ public class NewClaimController {
 
         // Add listener for ComboBox selection
 
-
         returnButton.setOnAction(event -> {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/ViewClaim/ViewClaim.fxml"));
@@ -89,6 +85,10 @@ public class NewClaimController {
         if (addButton.getText().equals("Update")) {
             String des = descriptionField.getText();
             reclamation.setDescription(des);
+            reclamation.setType(getSelectedType());
+            if (selectedFile != null) {
+                reclamation.setImage(selectedFile.toURI().toString());
+            }
             claimDAO.update(reclamation);
             redirectToViewClaim();
         } else {
@@ -103,13 +103,13 @@ public class NewClaimController {
                 String sat = "pas encore";
 
 
-                    reclamation reclamation = new reclamation( user, des, sqlDate, statue, type, imageUrl, sat);
-                    if (claimDAO.addWithAutoResponse(reclamation)) {
-                        System.out.println("Claim added successfully!");
-                        redirectToViewClaim();
-                    } else {
-                        System.out.println("Failed to add claim!");
-                    }
+                reclamation reclamation = new reclamation( user, des, sqlDate, statue, type, imageUrl, sat);
+                if (claimDAO.addWithAutoResponse(reclamation)) {
+                    System.out.println("Claim added successfully!");
+                    redirectToViewClaim();
+                } else {
+                    System.out.println("Failed to add claim!");
+                }
 
             }
         }
@@ -121,17 +121,23 @@ public class NewClaimController {
 
     public void populateFieldsWithClaim(int id) {
         reclamation = claimDAO.findById(id);
-        System.out.println(id);
-        System.out.println(reclamation);
         descriptionField.setText(reclamation.getDescription());
-
         if (reclamation.getImage() != null && !reclamation.getImage().isEmpty()) {
-            // Load the image and set it to the ImageView
             Image image = new Image(reclamation.getImage());
             imageView.setImage(image);
         }
-        addButton.setText("Modifier");
+        addButton.setText("Update");
         titleLabel.setText("Modifier votre réclamation");
+
+        // Set radio button value
+        String type = reclamation.getType();
+        if (type.equals("site")) {
+            siteRadioButton.setSelected(true);
+        } else if (type.equals("reservation")) {
+            reservationRadioButton.setSelected(true);
+        } else if (type.equals("service")) {
+            serviceRadioButton.setSelected(true);
+        }
     }
 
     @FXML
@@ -155,7 +161,7 @@ public class NewClaimController {
             return false;
         } else
 
-        return true;
+            return true;
     }
 
     private String getSelectedType() {

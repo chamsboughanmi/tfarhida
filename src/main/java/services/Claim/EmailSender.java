@@ -16,8 +16,8 @@ public class EmailSender {
         props.put("mail.smtp.ssl.trust", "*");
 
         // Informations d'identification pour l'envoi d'e-mails
-        final String username = "chamseddine.boughanmi@esprit.tn";
-        final String password = "Chams.messi1996";
+        final String username = "marwen.feki@esprit.tn";
+        final String password = "Bam4768226";
 
         // Création d'une session de messagerie avec authentification
         Session session = Session.getInstance(props,

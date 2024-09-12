@@ -100,10 +100,10 @@ public class ClaimService {
                     // Création de la réponse à la réclamation
                     ReponseReclamation reponseReclamation = new ReponseReclamation(c1, c1.getUser(), null, null);
 
-                    // Envoi de l'e-mail de confirmation de réclamation
+                     //Envoi de l'e-mail de confirmation de réclamation
                     String userEmail = c1.getUser().getEmail();  // Get email from user object
                     String claimDescription = c1.getDescription();
-                    EmailSender.sendEmail(userEmail, "Confirmation de réclamation",
+                   EmailSender.sendEmail(userEmail, "Confirmation de réclamation",
                             "Votre réclamation a été enregistrée avec succès.\n\n" +
                                     "Description : " + claimDescription + "\n\n" +
                                     "Nous traiterons votre réclamation dans les plus brefs délais. Merci.");
